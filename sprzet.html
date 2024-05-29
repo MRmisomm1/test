@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprzęt Gamingowy</title>
+    <link rel="stylesheet" href="style_sprzet.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="Logo.png" alt="Logo Strony Gry Komputerowe"> 
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="sprzet.html">Sprzęt gamingowy</a></li>
+                    <li><a href="ranking_gier.html">Ranking Gier</a></li>
+                    <li><a href="przelicznik_fps.html">Przelicznik FPS</a></li>
+                    <li><a href="rysunek_canvas.html">Canvas VR</a></li>
+                    <li><a href="mapa_gier.html">Mapa Gier</a></li>
+                    <li><a href="historia_gier.html">Historia gier</a></li>
+                    <li><a href="dolacz_do_nas.html">Dołącz do nas</a></li>
+                </ul>
+            </nav>
+            <div class="time-info">
+                <div id="zegarTXT" class="zegar"></div>
+                <div id="currentDate" class="obecnaData"></div>
+                <div id="czasNaStronie" class="czasNaStronie"></div>
+                <div id="iloscOdwiedzin" class="iloscOdwiedzin"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="equipment-section">
+            <h1 class="centered-heading">Sprzęt Gamingowy</h1>
+            <div class="carousel">
+                <button class="carousel-button prev-button" onclick="prevSlide()">&#10094;</button>
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                        <img src="Słuchawki_1.PNG" alt="Słuchawki Gamingowe - 1" class="carousel-image">
+                        <p class="carousel-description">Słuchawki te oferują doskonałą jakość dźwięku oraz wygodę użytkowania dzięki miękkim nausznikom.</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="Słuchwki_2.PNG" alt="Słuchawki Gamingowe - 2" class="carousel-image">
+                        <p class="carousel-description">Ergonomiczny design i możliwość regulacji zapewniają komfort nawet podczas długich sesji gamingowych.</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="Słuchawki_3.PNG" alt="Słuchawki Gamingowe - 3" class="carousel-image">
+                        <p class="carousel-description">Nowoczesne słuchawki z podświetleniem RGB, idealne do każdej konfiguracji gamingowej.</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="Słuchawki_4.PNG" alt="Słuchawki Gamingowe - 4" class="carousel-image">
+                        <p class="carousel-description">Bezprzewodowe słuchawki gamingowe z przestrzennym dźwiękiem 7.1, zapewniające immersyjne wrażenia z gry.</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="Słuchawki_5.PNG" alt="Słuchawki Gamingowe - 5" class="carousel-image">
+                        <p class="carousel-description">"Profesjonalne słuchawki z mikrofonem i podświetleniem RGB, doskonałe do długich sesji gamingowych i komunikacji z drużyną.</p>
+                    </div>
+                </div>
+                <button class="carousel-button next-button" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        Autor: Michał Sommerfeld <br>
+        Projekt strony internetowej wykonany w ramach zaliczenia przedmiotu MO: TIiSKwE na kierunku Energetyka. <br>
+        Kontakt: <a href="mailto:michal.sommerfeld@student.put.poznan.pl">michal.sommerfeld@student.put.poznan.pl</a>
+    </footer>
+    <script src="skrypt.js"></script>
+    <script src="karuzela.js"></script>
+    <script src="zegar.js"></script>
+</body>
+</html>

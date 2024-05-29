@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przelicznik FPS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_przelicznik.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="Logo.png" alt="Logo Strony Gry Komputerowe">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="sprzet.html">Sprzęt gamingowy</a></li>
+                    <li><a href="ranking_gier.html">Ranking Gier</a></li>
+                    <li><a href="przelicznik_fps.html">Przelicznik FPS</a></li>
+                    <li><a href="rysunek_canvas.html">Canvas VR</a></li>
+                    <li><a href="mapa_gier.html">Mapa Gier</a></li>
+                    <li><a href="historia_gier.html">Historia gier</a></li>
+                    <li><a href="dolacz_do_nas.html">Dołącz do nas</a></li>
+                </ul>
+            </nav>
+            <div class="time-info">
+                <div id="zegarTXT" class="zegar"></div>
+                <div id="currentDate" class="obecnaData"></div>
+                <div id="czasNaStronie" class="czasNaStronie"></div>
+                <div id="iloscOdwiedzin" class="iloscOdwiedzin"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="converter-section">
+            <h1>Przelicznik FPS</h1>
+            <form id="fpsForm">
+                <div class="form-group">
+                    <label for="cpu">Procesor:</label>
+                    <select id="cpu" name="cpu">
+                        <option value="1">Intel i9</option>
+                        <option value="0.9">Intel i7</option>
+                        <option value="0.8">Intel i5</option>
+                        <option value="0.7">AMD Ryzen 9</option>
+                        <option value="0.6">AMD Ryzen 7</option>
+                        <option value="0.5">AMD Ryzen 5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="gpu">Karta Graficzna:</label>
+                    <select id="gpu" name="gpu">
+                        <option value="1">NVIDIA RTX 3080</option>
+                        <option value="0.9">NVIDIA RTX 3070</option>
+                        <option value="0.8">NVIDIA RTX 3060</option>
+                        <option value="0.7">AMD RX 6800</option>
+                        <option value="0.6">AMD RX 6700</option>
+                        <option value="0.5">AMD RX 6600</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="ram">Ilość RAM:</label>
+                    <select id="ram" name="ram">
+                        <option value="1">32 GB</option>
+                        <option value="0.9">16 GB</option>
+                        <option value="0.8">8 GB</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="resolution">Rozdzielczość Ekranu:</label>
+                    <select id="resolution" name="resolution">
+                        <option value="1">1920x1080</option>
+                        <option value="0.8">2560x1440</option>
+                        <option value="0.6">3840x2160</option>
+                    </select>
+                </div>
+                <button type="button" onclick="calculateFPS()">Oblicz FPS</button>
+            </form>
+            <div id="result" class="result"></div>
+        </section>
+    </main>
+
+    <footer>
+        Autor: Michał Sommerfeld <br>
+        Projekt strony internetowej wykonany w ramach zaliczenia przedmiotu MO: TIiSKwE na kierunku Energetyka. <br>
+        Kontakt: <a href="mailto:michal.sommerfeld@student.put.poznan.pl">michal.sommerfeld@student.put.poznan.pl</a>
+    </footer>
+    <script src="skrypt.js"></script>
+    <script src="zegar.js"></script>
+    <script src="przelicznik.js"></script>
+</body>
+</html>

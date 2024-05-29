@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Gier Wideo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_mapa.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="Logo.png" alt="Logo Strony Gry Komputerowe">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="sprzet.html">Sprzęt gamingowy</a></li>
+                    <li><a href="ranking_gier.html">Ranking Gier</a></li>
+                    <li><a href="przelicznik_fps.html">Przelicznik FPS</a></li>
+                    <li><a href="rysunek_canvas.html">Canvas VR</a></li>
+                    <li><a href="mapa_gier.html">Mapa Gier</a></li>
+                    <li><a href="historia_gier.html">Historia gier</a></li>
+                    <li><a href="dolacz_do_nas.html">Dołącz do nas</a></li>
+                </ul>
+            </nav>
+            <div class="time-info">
+                <div id="zegarTXT" class="zegar"></div>
+                <div id="currentDate" class="obecnaData"></div>
+                <div id="czasNaStronie" class="czasNaStronie"></div>
+                <div id="iloscOdwiedzin" class="iloscOdwiedzin"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="map-section">
+            <h1>Mapa Gier Wideo</h1>
+            <div class="map-container">
+                <img src="Mapa_gier.PNG" usemap="#gamesMap" alt="Mapa Gier Wideo">
+                <map name="gamesMap">
+                    <area shape="rect" coords="0,0,190,500" alt="FPS" href="fps.html">
+                    <area shape="rect" coords="191,0,383,500" alt="RPG" href="rpg.html">
+                    <area shape="rect" coords="384,0,574,500" alt="Wyścigowe" href="wyscigowe.html">
+                    <area shape="rect" coords="575,0,766,500" alt="Sportowe" href="sportowe.html">
+                    <area shape="rect" coords="767,0,1000,500" alt="Strategiczne" href="strategiczne.html">
+                </map>
+            </div>
+            <p class="map-prompt">Kliknij na mapę, aby dowiedzieć się więcej o różnych typach gier!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Autor: Michał Sommerfeld <br>
+        Projekt strony internetowej wykonany w ramach zaliczenia przedmiotu MO: TIiSKwE na kierunku Energetyka <br>
+        Kontakt: <a href="mailto:michal.sommerfeld@student.put.poznan.pl">michal.sommerfeld@student.put.poznan.pl</a></p>
+    </footer>
+    <script src="skrypt.js"></script>
+    <script src="zegar.js"></script>
+</body>
+</html>
